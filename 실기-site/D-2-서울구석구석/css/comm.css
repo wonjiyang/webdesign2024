@@ -1,0 +1,167 @@
+:root {
+    --default: #333333;
+    --primary: lemonchiffon;
+    --white: #fff;
+    --black: #000;
+    --widthwrap: 1200px;
+    --minheight: calc(100vh - 100px - 100px - 300px);
+    --hdheigt: 100px;
+    --ftheigt: 100px;
+    --slideheigt: 300px;
+    --swiper-theme-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--default);
+    list-style: none;
+}
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+}
+
+#inner {
+    display: flex;
+    flex: 1;
+}
+
+#header {
+    width: 200px;
+    background-color: aliceblue;
+}
+
+#header .logo {
+    height: 200px;
+    text-align: center;
+}
+
+#header .logo a {
+    display: block;
+    height: 200px;
+}
+
+#header img {
+    margin: 43px 0;
+}
+
+#header .gnb {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.gnb > ul > li > a {
+    display: block;
+    padding: 10px;
+    background-color: #ccc;
+}
+
+.gnb > ul > li > a:hover {
+    background-color: #9c9c9c;
+}
+
+.gnb > ul > li > ul {
+    display: none;
+}
+
+.gnb > ul > li > ul > li > a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.gnb > ul > li > ul > li > a:hover {
+    background-color: #c0c0c0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#slide {
+    display: flex;
+    flex: 1;
+    height: 400px;
+}
+
+#slide .image {
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 230px);
+    background-color: aqua;
+}
+
+.image ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.image li {
+    width: 100%;
+}
+
+.image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#slide .banner {
+    width: 230px;
+    background-color: aquamarine;
+}
+
+#container {
+    height: 250px;
+    display: flex;
+    gap: 30px;
+}
+
+#container .content1 {
+    width: 50%;
+    height: 250px;
+    background-color: bisque;
+}
+
+#container .content2 {
+    width: 50%;
+    height: 250px;
+    background-color: blanchedalmond;
+}
+
+#footer {
+    display: flex;
+    height: 100px;
+}
+
+#footer .footer1 {
+    width: 200px;
+    height: 100px;
+    background-color: azure;
+}
+
+#footer .footer2 {
+    width: calc(100% - 200px - 230px);
+    height: 100px;
+    background-color: burlywood;
+}
+
+#footer .footer3 {
+    width: 230px;
+    height: 100px;
+    background-color: cadetblue;
+}
