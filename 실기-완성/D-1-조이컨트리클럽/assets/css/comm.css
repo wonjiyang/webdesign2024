@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 16px;
+    box-sizing: border-box;
+    list-style: none;
+    color: #333333;
+}
+
+.inner {
+    display: flex;
+    height: calc(100vh - 100px);
+    background-color: lavender;
+}
+
+#header {
+    width: 200px;
+    background-color: lemonchiffon;
+}
+
+.content {
+    flex-grow: 1;
+    /* width: calc(100% - 200px); */
+    background-color: lightcyan;
+
+}
+
+#footer {
+    height: 100px;
+    background-color: lavenderblush;
+}
