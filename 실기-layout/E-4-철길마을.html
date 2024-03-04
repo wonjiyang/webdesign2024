@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>철길마을</title>
+    <link rel="stylesheet" href="./css/comm.css">
+    <style>
+        :root {
+            --default: #333333;
+            --primary: lemonchiffon;
+            --white: #fff;
+            --black: #000;
+            --widthwrap: 1200px;
+            --minheight: calc(100vh - 100px - 100px - 300px);
+            --hdheigt: 100px;
+            --ftheigt: 100px;
+            --slideheigt: 300px;
+            --swiper-theme-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.5;
+            font-size: 16px;
+            text-decoration: none;
+            color: var(--default);
+            list-style: none;
+        }
+
+        #wrap {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        #inner {
+            display: flex;
+            flex-grow: 1;
+            height: calc(100% - 120px);
+        }
+
+        #header {
+            width: 200px;
+            background-color: aliceblue;
+        }
+
+        #header .logo {
+            height: 200px;
+            background-color: azure;
+        }
+
+        #main {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+
+        #container .slide {
+            height: 20%;
+            background-color: beige;
+        }
+
+        #container .notice {
+            height: 30%;
+            background-color: bisque;
+        }
+
+        #container .gallery {
+            height: 30%;
+            background-color: blanchedalmond;
+        }
+
+        #container .link {
+            height: 20%;
+            background-color: burlywood;
+        }
+
+        #image {
+            width: calc(100% - 400px);
+            background-color: aquamarine;
+        }
+
+        #footer {
+            display: flex;
+            height: 120px;
+        }
+
+        #footer .footer1 {
+            width: 200px;
+            background-color: aqua;
+        }
+
+        #footer .footer2 {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+
+        #footer .footer2-1 {
+            height: 50%;
+            background-color: gainsboro;
+        }
+
+        #footer .footer2-2 {
+            height: 50%;
+            background-color: lavender;
+        }
+
+        #footer .footer3 {
+            flex-grow: 1;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="inner">
+            <header id="header">
+                <h1 class="logo"></h1>
+                <nav class="gnb"></nav>
+            </header>
+            <main id="main">
+                <section id="container">
+                    <div class="slide"></div>
+                    <div class="notice"></div>
+                    <div class="gallery"></div>
+                    <div class="link"></div>
+                </section>
+                <article id="image"></article>
+            </main>
+        </div>
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2">
+                <div class="footer2-1"></div>
+                <div class="footer2-2"></div>
+            </div>
+            <div class="footer3"></div>
+        </footer>
+    </div>
+</body>
+</html>
