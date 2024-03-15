@@ -21,4 +21,11 @@ $(function() {
         $(this).addClass('active').siblings().removeClass('active');
         $('.tabcon > div').eq(index).show().siblings().hide();
     });
+
+    $('.notice ul li:first-child').on('click', function() {
+        $('.modal').show().css('display', 'flex')
+    })
+    $('.modal-close').on('click', function() {
+        $('.modal').hide()
+    })
 });
