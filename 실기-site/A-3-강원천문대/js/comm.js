@@ -1,11 +1,4 @@
 $(function() {
-    $('.gnb > ul > li').mouseover(function() {
-        $(this).find('.submenu').stop().slideDown(200);
-    });
-    $('.gnb > ul > li').mouseout(function() {
-        $(this).find('.submenu').stop().slideUp(200);
-    });
-
     let currentIndex = 0;
     $('.slider').hide().first().show();
     setInterval(function() {

@@ -59,14 +59,20 @@
     background-color: #117cc9;
 }
 
+.gnb > ul > li > a:hover .submenu {
+    max-width: 300px;
+}
+
 .gnb .submenu {
+    transition: all 0.3;
+    overflow: hidden;
+    max-height: 0;
     position: absolute;
     top: 40px;
     left: 0;
     z-index: 1;
     width: 100%;
     text-align: center;
-    display: none;
 }
 
 .gnb .submenu > li > a {
