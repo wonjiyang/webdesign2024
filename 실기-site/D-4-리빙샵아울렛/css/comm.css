@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-decoration: none;
+    list-style: none;
+    color: #333;
+}
+
+.wrap {
+    width: 100%;
+    height: 920px;
+}
+
+.inner {
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+.header {
+    width: 200px;
+    height: 800px;
+}
+
+.logo img {
+    padding: 20px;
+}
+
+.nav {
+    position: absolute;
+    top: 200px;
+    left: 25px;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav > ul > li > a {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    color: #fff;
+    background-color: blue;
+}
+
+.nav > ul > li > a:hover {
+    background-color: rgb(106, 106, 255);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    z-index: 10;
+    background-color: bisque
+}
+
+.submenu li {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+.submenu a {
+    padding: 5px;
+}
+
+.submenu a:hover {
+    background-color: burlywood;
+}
+
+.nav-bg {
+    display: none;
+    height: 176px;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    left: 175px;
+    z-index: 1;
+    background-color: bisque;
+}
+
+.main {
+    width: calc(100% - 200px);
+    height: 800px;
+}
+
+.slide {
+    height: 400px;
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 400px;
+}
+
+.link {
+    height: 150px;
+}
+
+.link ul {
+    display: flex;
+    height: 150px;
+}
+
+.link a {
+    display: block;
+    text-align: center;
+}
+
+.link img {
+    width: 30%;
+    height: 80%;
+}
+
+.no-gall {
+    height: 250px;
+    display: flex;
+}
+
+.notice, .gallery {
+    width: 50%;
+    padding: 20px;
+}
+
+.notice h2, .gallery h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.notice a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.notice p {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.gallery ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 70%;
+    height: 80%;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: #dbdbdb;
+}
+
+.con {
+    width: 200px;
+    height: 120px;
+}
+
+.con2 {
+    width: 60%;
+    height: 120px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li {
+    border-right: 1px solid #333;
+}
+
+.menu li:last-child {
+    border: none;
+}
+
+.menu a {
+    padding: 10px;
+}
+
+.copy {
+    height: 60px;
+}
+
+.family {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31%;
+    height: 120px;
+}
+
+#family {
+    padding: 20px;
+}
+
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-box {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.modal-box h3 {
+    padding-bottom: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d1d1d1;
+    border-radius: 5px;
+    padding: 8px;
+}
