@@ -7,14 +7,18 @@ $(document).ready(function() {
         $(this).find(".submenu").stop().slideUp();
     })
 
-    //slide
-    let now = 0; 
-    const slideCount = $('.image ul li'). length
-    const slideList = $('.image ul')
+    let currentIndex = 0;
+    $('.slider').append($('.slide').first().clone(true));
     setInterval(function() {
-        now = (now + 1) % slideCount
-        slideList.css('left', 100 * -now + '%')
-    }, 3000)
+        currentIndex++;
+        $('.slider').animate({marginLeft: -100 * currentIndex + '%'}, 600);
+        if(currentIndex == 3){
+            setTimeout(function() {
+                $('.slider').animate({marginLeft: 0}, 0);
+                currentIndex = 0;
+            }, 600);
+        }
+    }, 3000);
 
     //modal
     $('.list-bbs li:first-child').on('click', function() {

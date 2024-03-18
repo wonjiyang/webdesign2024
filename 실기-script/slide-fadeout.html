@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>강원천문대</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                list-style: none;
+                line-height: 1.5;
+                color: #333;
+            }
+
+            .wrap {
+                width: 100%;
+            }
+            
+            .inner {
+                width: 1200px;
+                margin: auto;
+            }
+
+            .header {
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #30a3f3;
+            }
+
+            .content1 {
+                position: relative;
+                width: 100%;
+                height: 300px;
+            }
+
+            .slider {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="inner">
+                <header class="header">
+                    <h1>
+                        <a href="#" class="logo">
+                        </a>
+                    </h1>
+                    <nav class="gnb"></nav>
+                </header>
+                <main>
+                    <div class="content1">
+                        <div class="slide">
+                            <ul>
+                                <li class="slider">
+                                    <a href="#"><img src="./images/slider01.jpg" alt="별도 보고, 달도 보고 강원천문과학관"></a>
+                                </li>
+                                <li class="slider">
+                                    <a href="#"><img src="./images/slider02.jpg" alt="우주를 향한 꿈의 실현, 강원천문대"></a>
+                                </li>
+                                <li class="slider">
+                                    <a href="#"><img src="./images/slider03.jpg" alt="별을 아는 어린이는 생각이 깊어집니다."></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content2">
+                        <article class="tab"></article>
+                        <article class="banner"></article>
+                        <article class="goto"></article>
+                    </div>
+                </main>
+                <footer class="footer"></footer>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+            let currentIndex = 0;
+            $('.slider').hide().first().show();
+            setInterval(function() {
+                let nextIndex = (currentIndex+1) % 3; 
+                $('.slider').eq(currentIndex).fadeOut(1200);
+                $('.slider').eq(nextIndex).fadeIn(1200);
+                currentIndex = nextIndex;
+            }, 3000);
+        })
+    </script>
+</html>

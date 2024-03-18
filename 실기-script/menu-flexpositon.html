@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>강원천문대</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                list-style: none;
+                line-height: 1.5;
+                color: #333;
+            }
+
+            .wrap {
+                width: 100%;
+            }
+            
+            .inner {
+                width: 1200px;
+                margin: auto;
+            }
+
+            .header {
+                position: relative;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #30a3f3;
+            }
+            
+            .gnb {
+                position: absolute;
+                top: 30px;
+                right: 0;
+            }
+
+            .gnb > ul {
+                display: flex;
+            }
+
+            .gnb > ul > li > a {
+                display: block;
+                width: 150px;
+                text-align: center;
+                padding: 10px;
+                background-color: #e7f5ff;
+            }
+
+            .gnb > ul > li > a:hover {
+                background-color: #b7e1ff; 
+            }
+
+            .submenu {
+                display: none;
+            }
+
+            .submenu a {
+                display: block;
+                width: 150px;
+                font-size: 14px;
+                text-align: center;
+                padding: 10px;
+                background-color: #79c7ff;
+            }
+            .submenu a:hover {
+                background-color: #f3faff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="inner">
+                <header class="header">
+                    <h1>
+                        <a href="#" class="logo">
+                        </a>
+                    </h1>
+                    <nav class="gnb">
+                        <ul>
+                            <li>
+                                <a href="#">강원천문대</a>
+                                <ul class="submenu">
+                                    <li><a href="#">천문대소개</a></li>
+                                    <li><a href="#">인사말</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">이용안내</a>
+                                <ul class="submenu">
+                                    <li><a href="#">프로그램</a></li>
+                                    <li><a href="#">관람시간표</a></li>
+                                    <li><a href="#">이달의 별자리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">천문대예약</a>
+                                <ul class="submenu">
+                                    <li><a href="#">예약하기</a></li>
+                                    <li><a href="#">예약확인</a></li>
+                                    <li><a href="#">예약취소</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">커뮤니티</a>
+                                <ul class="submenu">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">방문후기</a></li>
+                                    <li><a href="#">자유게시판</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <main>
+                    <div class="content1">
+                    </div>
+                    <div class="content2">
+                        <article class="tab"></article>
+                        <article class="banner"></article>
+                        <article class="goto"></article>
+                    </div>
+                </main>
+                <footer class="footer"></footer>
+            </div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $('.gnb > ul > li').mouseover(function() {
+            $(this).find('.submenu').stop().slideDown()
+        })
+        $('.gnb > ul > li').mouseout(function() {
+            $(this).find('.submenu').stop().slideUp()
+        })
+    </script>
+</html>

@@ -13,10 +13,10 @@
         <div class="inner">
             <header class="header">
                 <div class="logo">
-                    <img src="./images/logo.png" alt="">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
+                <div class="nav-bg"></div>
                 <nav class="nav">
-                    <div class="nav-bg"></div>
                     <ul>
                         <li>
                             <a href="#">대학소개</a>
@@ -55,10 +55,99 @@
                     </ul>
                 </nav>
             </header>
-            <main class="main"></main>
-            <footer class="footer"></footer>
+            <section id="slide">
+                <div class="slider">
+                    <div class="slide s1"></div>
+                    <div class="slide s2"></div>
+                    <div class="slide s3"></div>
+                </div>
+            </section>
+            <section class="content">
+                <article class="notice">
+                    <h2>공지사항</h2>
+                    <ul>
+                        <li>
+                            <a href="#" class="modal-open">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <span>2024.03.18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem, ipsum dolor.</p>
+                                <span>2024.03.18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem, ipsum dolor.</p>
+                                <span>2024.03.18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem, ipsum dolor.</p>
+                                <span>2024.03.18</span>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="gallery">
+                    <h2>갤러리</h2>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="./images/gallery01.jpg" alt="gallery01"></a>
+                            <a href="#"><img src="./images/gallery02.jpg" alt="gallery02"></a>
+                            <a href="#"><img src="./images/gallery03.jpg" alt="gallery03"></a>
+                        </li>
+                    </ul>
+                </article>
+                <section class="banner">
+                    <a href="#"><img src="./images/banner.jpg" alt="banner"></a>
+                </section>
+            </section>
+            <footer class="footer">
+                <section class="footer-inner">
+                    <div class="menu">
+                        <ul class="list">
+                            <li>
+                                <a href="#">메뉴1</a>
+                            </li>
+                            <li>
+                                <a href="#">메뉴2</a>
+                            </li>
+                            <li>
+                                <a href="#">메뉴3</a>
+                            </li>
+                            <li>
+                                <a href="#">메뉴4</a>
+                            </li>
+                            <li>
+                                <a href="#">메뉴5</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copy">
+                        Copyright © 2003-2017 산업대학교. All Rights Reserved.
+                    </div>
+                </section>
+                <div class="family">
+                    <select name="family" id="family">
+                        <option value="family site">family site</option>
+                        <option value="산업대학교1">산업대학교1</option>
+                        <option value="산업대학교2">산업대학교2</option>
+                        <option value="산업대학교3">산업대학교3</option>
+                    </select>
+                </div>
+            </footer>
         </div>
-        <div class="modal"></div>
+        <div class="modal">
+            <div class="modal-box">
+                <h3>산업대학교 모달창</h3>
+                <p>2023년도 1학기 일정 변경 안내 안녕하세요, 산업대학교 교무처입니다. 2023년도 1학기 수업 일정에 변경이 있어 안내드립니다. 기존 수업 일정에 따르면 3월 2일부터 6월 16일까지 총 15주 동안 수업이 진행되었으나, 교내 사정으로 인해 수업 일정이 변경되었습니다. 참고해주세요!</p>
+                <a href="#" class="modal-close">닫기</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

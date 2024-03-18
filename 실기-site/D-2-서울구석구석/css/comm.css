@@ -89,7 +89,6 @@
 
 #slide {
     display: flex;
-    /* flex: 1; */
     height: 400px;
 }
 
@@ -97,6 +96,30 @@
     position: relative;
     overflow: hidden;
     width: calc(100% - 230px);
+}
+
+.slider {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#slide .s1 {
+    background-image: url(../images/slide1.jpg);
+}
+#slide .s2 {
+    background-image: url(../images/slide2.jpg);
+}
+#slide .s3 {
+    background-image: url(../images/slide3.jpg);
 }
 
 .image ul {
