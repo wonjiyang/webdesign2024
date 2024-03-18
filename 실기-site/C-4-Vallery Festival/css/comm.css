@@ -11,11 +11,12 @@
 .wrap {
     width: 1000px;
     height: 650px;
+    display: flex;
 }
 
 .header {
     width: 200px;
-}
+    background-color: rgb(244, 253, 255);}
 
 .header .logo img {
     width: 200px;
@@ -24,7 +25,7 @@
 }
 
 .header .nav {
-    height: 650px;
+    position: relative;
     padding: 20px;
 }
 
@@ -39,9 +40,215 @@
     background-color: rgb(144, 221, 240);
 }
 
-.submenu a {
+
+.submenu {
+    display: none;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 180px;
+    height: 260px;
+    background-color: rgb(133, 198, 215);
+}
+
+.submenu a {
     display: block;
+    width: 180px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(133, 198, 215);
+}
+
+.submenu a:hover {
+    background-color: rgb(156, 206, 218);
+}
+
+.main {
+    width: 100%;
+    height: 650px;
+}
+
+#slide {
+    height: 350px;
+    overflow: hidden;
+}
+
+.slider {
+    width: 400%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#slide .s1 {
+    background-image: url(../images/slider01.jpg);
+}
+
+#slide .s2 {
+    background-image: url(../images/slider02.jpg);
+}
+
+#slide .s3 {
+    background-image: url(../images/slider03.jpg);
+}
+
+.content {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: rgb(231, 241, 244);
+}
+
+.content > div {
+    width: 33.3%;
+}
+
+.notice, .gallery {
+    padding: 10px;
+}
+
+.content h2 {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.notice a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.notice p {
+    width: 60%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.notice span {
+    font-size: 13px;
+}
+
+.gallery ul {
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery li {
+    text-align: center;
+}
+
+.gallery img {
+    width: 80%;
+    height: 100%;
+}
+
+.goto {
+    background-image: url(../images/banner.jpg);
+}
+
+.goto-inner {
+    padding: 10px;
+}
+
+.goto h2 {
+    color: #fff;
+}
+
+.goto ul {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.goto li {
+    width: 45%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+.goto a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.footer {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 100%;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(100);
+}
+
+#family {
+    padding: 10px;
+}
+
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-box {
+    position: relative;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.modal-box h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.modal-box p {
+    padding-top: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
 }
